@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neemtree Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading"><h2>Add Candidates To Database</h2>
+    </div>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+    <div class="container">
+        <input  type="file" id="input-file" name="input" />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+          </svg>
+          <p class="msg"></p>
+          <p class="prompt">Upload a .xlsx or .xls file here</p>
+          <button class="UploadBtn">Upload</button>
+    </div>
+</form>
+</body>
+<script src="script.js"></script>
+<script src="loadfile.js"></script>
+</html>
